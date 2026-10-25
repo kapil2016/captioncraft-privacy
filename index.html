@@ -1,0 +1,208 @@
+<!doctype html>
+<!--
+  Privacy policy for CaptionCraft (com.appcraftstudio.captioncraft).
+
+  Published at https://kapil2016.github.io/captioncraft-privacy/
+  from the repository checked out at ~/Desktop/CaptionCraft-privacy.
+
+  To change the policy: edit index.html, commit and push. GitHub Pages rebuilds
+  within a minute.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — CaptionCraft</title>
+<style>
+  :root {
+    --ink: #0f172a;
+    --muted: #475569;
+    --line: #e4e7ef;
+    --accent: #6d4aff;
+    --paper: #ffffff;
+    --bg: #f6f7fb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 40px 36px;
+  }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 {
+    font-size: 17px; margin: 34px 0 10px; padding-top: 20px;
+    border-top: 1px solid var(--line); letter-spacing: -0.005em;
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: var(--muted); }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  strong { color: var(--ink); }
+  .updated { color: #94a3b8; font-size: 14px; margin-bottom: 4px; }
+  .lede { color: var(--ink); font-size: 17px; }
+  table { border-collapse: collapse; width: 100%; margin: 4px 0 14px; font-size: 15px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 600; width: 34%; }
+  td { color: var(--muted); }
+  a { color: var(--accent); }
+  footer { max-width: 720px; margin: 20px auto 0; color: #94a3b8; font-size: 13px; text-align: center; }
+  @media (max-width: 560px) {
+    body { padding: 16px 12px 48px; }
+    main { padding: 26px 20px; border-radius: 10px; }
+    h1 { font-size: 24px; }
+    th { width: auto; }
+    table, tbody, tr, th, td { display: block; }
+    th { border-bottom: 0; padding-bottom: 0; }
+    td { padding-top: 2px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="updated">Last updated: 25 October 2026</p>
+  <h1>Privacy Policy</h1>
+  <p class="lede">CaptionCraft is made by APPCRAFTSTUDIO. It writes captions for
+    your videos and audio, and lets you edit and export videos. This page explains
+    what leaves your phone when you use it, why, and for how long it is kept.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li><strong>Your videos, photos and music stay on your phone.</strong> Editing
+      and exporting happen on the device. Finished videos are saved to your gallery
+      (Movies/CaptionCraft).</li>
+    <li><strong>Only when you tap Auto captions</strong> is the <em>sound</em> of the
+      part you chose sent to our server and to Google's Gemini AI, which turns the
+      speech into words. The picture is never sent.</li>
+    <li>There is no account, no sign-up, no ads, no analytics and no tracking. We do
+      not sell or share your information for advertising.</li>
+    <li>Payments are handled entirely by Google Play. We never see your card, name or
+      email address.</li>
+  </ul>
+
+  <h2>What leaves your phone, and why</h2>
+  <table>
+    <tr><th>Sound for captions</th>
+      <td>When you ask for auto captions, the app cuts the audio of the chosen part
+        into pieces of about four minutes and sends them over an encrypted (HTTPS)
+        connection to our server, which passes each piece to the Google Gemini API to
+        transcribe. The piece is deleted from Gemini's file storage as soon as the
+        words come back. Our server does not keep the sound.</td></tr>
+    <tr><th>The words that come back</th>
+      <td>The transcribed words and their timings are kept on our server for
+        <strong>14 days</strong>, linked only to your app's random device token, so a
+        retry after a lost connection, or captioning the same part again, is not
+        charged twice. After 14 days they are deleted automatically.</td></tr>
+    <tr><th>Caption text for translation</th>
+      <td>If you translate captions, the caption lines are sent to our server and to
+        Gemini to be translated. We do not store the text; we only count how many
+        translations each device makes per day, to apply a daily limit.</td></tr>
+    <tr><th>A random device token</th>
+      <td>On first launch our server issues a random token that holds your caption
+        minutes balance. It is not linked to your name, email or Google account.</td></tr>
+    <tr><th>A hashed phone identifier</th>
+      <td>The app sends a one-way SHA-256 hash of Android's ANDROID_ID for this app.
+        It is used only so the 5 free minutes are given once per phone, and so a
+        reinstalled app gets its own balance back. The original ID cannot be
+        recovered from the hash, and it is not used for advertising.</td></tr>
+    <tr><th>Purchase records</th>
+      <td>When you buy caption minutes, Google Play gives the app a purchase token.
+        Our server checks it with Google and keeps the order ID, the product bought,
+        the purchase token and the date, so the minutes are credited once and can be
+        restored.</td></tr>
+    <tr><th>Your IP address</th>
+      <td>Seen by our server when the app connects, as with any internet service.
+        When a new device registers, we keep only a keyed hash of the address and the
+        day, to stop abuse of the free minutes; it is deleted the next day. We do not
+        store IP addresses or use them for location.</td></tr>
+  </table>
+
+  <h2>Who processes it</h2>
+  <ul>
+    <li><strong>Cloudflare</strong> hosts our server and its database (Cloudflare
+      Workers and D1). See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's
+      privacy policy</a>.</li>
+    <li><strong>Google Gemini API</strong> turns speech into words and translates
+      captions. Some requests are handled under Google's unpaid Gemini API service; for
+      those, Google's terms allow it to use the content it receives to provide and
+      improve its products, which can include review by trained people. Please do not
+      caption recordings containing information you would not want processed this way.
+      See the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and
+      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+    <li><strong>Google Play</strong> handles purchases and gives us anonymous, aggregated
+      statistics such as install counts and crash reports, under
+      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+  </ul>
+  <p>We do not sell, rent or share your information with anyone else.</p>
+
+  <h2>What stays on your phone</h2>
+  <ul>
+    <li>The videos, audio and photos you pick. The app reads them through Android's
+      own picker, only the files you choose, and never uploads them.</li>
+    <li>Your caption edits while you work, and the device token that holds your
+      minutes, in the app's private storage.</li>
+    <li>The videos you export, saved in your gallery under Movies/CaptionCraft.</li>
+  </ul>
+  <p>App data is not included in Android backups. Uninstalling the app removes
+    everything in its private storage; exported videos stay in your gallery until you
+    delete them.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Internet</th><td>To make captions and translations, and to check
+      purchases.</td></tr>
+    <tr><th>Google Play billing</th><td>To buy caption minutes.</td></tr>
+    <tr><th>Storage (Android 9 and older only)</th><td>To save finished videos to your
+      gallery. Newer Android versions need no permission for this.</td></tr>
+  </table>
+  <p>CaptionCraft does not use your camera, microphone, contacts or location.</p>
+
+  <h2>How long we keep it</h2>
+  <ul>
+    <li>Transcribed words: 14 days.</li>
+    <li>Registration abuse checks: until the next day.</li>
+    <li>Device token, hashed phone identifier, minutes balance and purchase records:
+      for as long as the balance may be used or restored, or until you ask us to
+      delete them.</li>
+  </ul>
+
+  <h2>Your choices and deleting your data</h2>
+  <p>You can use every feature except auto captions and translation without anything
+    leaving your phone. To have the data our server holds about your device deleted,
+    email us at the address below. Because we do not know who you are, include the
+    Google Play order ID of a purchase (from your Google Play receipt email) or tell us
+    roughly when you installed the app, and we will delete the matching records within
+    30 days. Deleting a device's records also removes any unused caption minutes.</p>
+
+  <h2>Security</h2>
+  <p>All traffic between the app and our server, and between our server and Google, is
+    encrypted with HTTPS. Access to the server and its database is restricted to the
+    developer.</p>
+
+  <h2>Children</h2>
+  <p>CaptionCraft is not directed at children under 13, and we do not knowingly collect
+    information from children. If you believe a child has used the app's caption
+    service, contact us and we will delete the related records.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new
+    date. Significant changes will be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>APPCRAFTSTUDIO —
+    <a href="mailto:craftconsole88@gmail.com">craftconsole88@gmail.com</a></p>
+</main>
+<footer>CaptionCraft · com.appcraftstudio.captioncraft · APPCRAFTSTUDIO</footer>
+</body>
+</html>
